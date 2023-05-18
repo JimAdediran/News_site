@@ -1,6 +1,14 @@
 from django.shortcuts import render, HttpResponse
+from .models import Article
+from .serializers import ArticleSerializer
+from django.http import JsonResponse
 
 # Create your views here.
 
-def Index(request) :
-    return HttpResponse("It is working")
+def article_list(request):
+    
+    #getallarticles
+    if request.method == "GET":
+        articles = Article.objects.all()
+        serializer = ArticleSerializer(articles, many=True)
+        return JsonResponse(serializer.data, safe=False)
