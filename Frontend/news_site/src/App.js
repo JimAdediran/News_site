@@ -7,10 +7,8 @@ import MyClass from './components/MyClass';
 function App() {
   return (
     <div className="App">
-      <h1>Hello React Application</h1>
-      <Hello/>
-      <FunComponent/>
-      <MyClass/>
+      <Hello name = "Johnny" lastname = "Williams"/>
+      <MyClass email = "jwill@will.com"/>
     </div>
   );
 }
