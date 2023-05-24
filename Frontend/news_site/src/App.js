@@ -5,10 +5,16 @@ import FunComponent from './components/FunComponent';
 import MyClass from './components/MyClass';
 
 function App() {
+
+  function clicked() {
+    alert("Inside App.js")
+}
+
+
   return (
     <div className="App">
-      <Hello name = "Johnny" lastname = "Williams"/>
-      <MyClass email = "jwill@will.com"/>
+      <Hello name = "Johnny"/>
+      <MyClass email = "jwill@will.com" myclick={clicked}/>
     </div>
   );
 }
