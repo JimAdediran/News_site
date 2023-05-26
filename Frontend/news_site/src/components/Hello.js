@@ -13,7 +13,7 @@ function Hello(props) {
        <div>
 
         <h1>My name is: {props.name}</h1>
-        <button onClick={Clickme}>Click Me</button>
+        <button className='btn btn-success' onClick={Clickme}>Click Me</button>
        </div>
     )
     

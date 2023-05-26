@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className="container">
       <Hello name = "Johnny"/>
       <MyClass email = "jwill@will.com" myclick={clicked}/>
     </div>
